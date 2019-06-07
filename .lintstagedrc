@@ -1,0 +1,11 @@
+{
+  "linters": {
+    "*.js": [
+      "eslint"
+    ],
+    "src/**/*.{js,jsx,ts,tsx,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
