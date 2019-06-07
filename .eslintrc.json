@@ -1,0 +1,41 @@
+{
+  "extends": [
+    "react-app",
+    "standard",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react",
+    "prettier/standard"
+  ],
+  "plugins": ["prettier", "standard", "promise"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "all",
+        "semi": false,
+        "useTabs": false,
+        "arrowParens": "always",
+        "parser": "babel"
+      }
+    ],
+    "eqeqeq": ["error", "always"],
+    "generator-star-spacing": 0,
+    "react/prop-types": 0,
+    "import/named": 2,
+    "import/namespace": 2,
+    "import/default": 2,
+    "import/export": 2
+  }
+}
