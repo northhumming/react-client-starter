@@ -1,6 +1,6 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Button from "components/Button";
+import React from 'react'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import Button from 'components/Button'
 
 function BasicExample() {
   return (
@@ -25,7 +25,7 @@ function BasicExample() {
         <Route path="/topics" component={Topics} />
       </div>
     </Router>
-  );
+  )
 }
 
 function Home() {
@@ -34,7 +34,7 @@ function Home() {
       <h2>Home</h2>
       <Button />
     </div>
-  );
+  )
 }
 
 function About() {
@@ -42,7 +42,7 @@ function About() {
     <div>
       <h2>About</h2>
     </div>
-  );
+  )
 }
 
 function Topics({ match }) {
@@ -68,7 +68,7 @@ function Topics({ match }) {
         render={() => <h3>Please select a topic.</h3>}
       />
     </div>
-  );
+  )
 }
 
 function Topic({ match }) {
@@ -76,7 +76,7 @@ function Topic({ match }) {
     <div>
       <h3>{match.params.topicId}</h3>
     </div>
-  );
+  )
 }
 
-export default BasicExample;
+export default BasicExample
