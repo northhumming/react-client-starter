@@ -1,11 +1,17 @@
 /** @jsx jsx */
-import React from 'react'
 import { jsx } from '@emotion/core'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import { Home, About, Topics } from 'components/pages'
-import GlobalStyles from 'lib/style'
+import { ThemeProvider } from 'emotion-theming'
 
-function BasicExample() {
+import { Home, About, Topics } from 'components/pages'
+import GlobalStyles from 'lib/styles'
+import { breakpoints } from 'lib/styles/helpers'
+
+const theme = {
+  breakpoints: Object.keys(breakpoints).map((key) => breakpoints[key]),
+}
+
+function App() {
   const menus = [
     {
       to: '/',
@@ -22,7 +28,7 @@ function BasicExample() {
   ]
 
   return (
-    <React.Fragment>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
       <div className="container">
         <Router>
@@ -49,7 +55,8 @@ function BasicExample() {
           </div>
         </Router>
       </div>
-    </React.Fragment>
+    </ThemeProvider>
   )
 }
-export default BasicExample
+
+export default App
