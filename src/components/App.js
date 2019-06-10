@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import { Home, About, Topics } from 'components/pages'
-import { GlobalStyles } from 'lib/style'
+import GlobalStyles from 'lib/style'
 
 function BasicExample() {
   return (

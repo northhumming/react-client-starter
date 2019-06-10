@@ -1,7 +1,9 @@
 export const breakpoints = {
-  md: '48em', // 768px
-  lg: '60em', // 960px
-  xl: '80em', // 1280px
+  xs: '32rem', // ~512px
+  sm: '48rem', // ~768px
+  md: '64rem', // ~1024px
+  lg: '80rem', // ~1280px
+  xl: '90rem', // ~1440px
 }
 
 export function mq(bp = 'lg') {
