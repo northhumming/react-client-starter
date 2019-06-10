@@ -1,6 +1,5 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import Button from 'components/Button'
 
 function BasicExample() {
   return (
@@ -32,7 +31,6 @@ function Home() {
   return (
     <div>
       <h2>Home</h2>
-      <Button />
     </div>
   )
 }
